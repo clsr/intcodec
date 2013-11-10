@@ -6,7 +6,7 @@ import (
 	"math"
 )
 
-// Codec implements encodin and decoding for a specific base and character set.
+// Codec implements encoding and decoding for a specific base and character set.
 type Codec struct {
 	encodeMap string
 	decodeMap []int16
@@ -29,9 +29,6 @@ var ErrInvalid = errors.New("intcodec: invalid character in string")
 // ErrOverflow means that the string given to a Decode method overflows its
 // return type.
 var ErrOverflow = errors.New("intcodec: integer overflow")
-
-// Base64 is a Codec using the standard base64 charset without padding.
-var Base64 = New(base64)
 
 // New creates a new Codec from the given character set.
 //
