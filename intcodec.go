@@ -16,7 +16,6 @@ type Codec struct {
 const (
 	lowerBase36 = "0123456789abcdefghijklmnopqrstuvwxyz"
 	upperBase36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	base64      = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 )
 
 // ErrEmpty means that the string given to a Decode method was empty.
